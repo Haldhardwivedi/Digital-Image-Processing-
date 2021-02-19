@@ -1,5 +1,5 @@
 ##  Read a matrix of size 5*5 and find the following by using a user-defined function.
-## i. sum
+#### i. sum
 ## ii. maximum
 ## iii.mean
 ## iv.median
