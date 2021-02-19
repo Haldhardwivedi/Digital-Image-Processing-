@@ -16,3 +16,4 @@ if __name__ == "__main__":
         print("mode is "+str(uf.mode(matrix,m,n)))
     print("Frequency distribution is :")
     uf.frequency(matrix,m,n)
+    print("Standard Deviation is :"+ str(uf.standard_deviation(matrix,m,n)))
