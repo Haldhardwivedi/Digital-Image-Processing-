@@ -5,7 +5,7 @@ import userfunc as uf #contains user defined functions
 if __name__ == "__main__":
     m=int(input("row "))
     n=int(input("column "))
-    matrix=np.random.randint(10, size=(m, n))
+    matrix=np.random.randint(100, size=(m, n))
     print("Generated Matrix is : ")
     print(matrix)
     print("sum is : "+    str(uf.mxtrix_sum(matrix,m,n)))
@@ -14,4 +14,5 @@ if __name__ == "__main__":
     if uf.mode(matrix,m,n) !=-1 :
         print("mode is "+str(uf.mode(matrix,m,n)))
     uf.frequency(matrix,m,n)
+    print("Standard Deviation is :"+ str(uf.standard_deviation(matrix,m,n)))
 
