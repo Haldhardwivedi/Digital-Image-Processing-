@@ -5,7 +5,7 @@ import userfunc as uf #contains user defined functions
 if __name__ == "__main__":
     m=int(input("row "))
     n=int(input("column "))
-    matrix=np.random.randint(100, size=(m, n))
+    matrix=np.random.randint(10, size=(m, n))
     print("Generated Matrix is : ")
     print(matrix)
     print("sum is : "+    str(uf.mxtrix_sum(matrix,m,n)))
