@@ -63,4 +63,13 @@ def frequency(matrix,m,n):
         print(str(k)+'->'+str(v))
 
 
-            
+def standard_deviation(matrix,m,n):
+    n_num=[]
+    for i in range(0,m):
+        for j in range(0,n):
+            n_num.append(matrix[i][j])
+    
+    mean = sum(n_num) / len(n_num) 
+    variance = sum([((x - mean) ** 2) for x in n_num]) / len(n_num) 
+    res = variance ** 0.5
+    return res
