@@ -2,8 +2,8 @@ import numpy as np
 import userfunc as uf #contains user defined functions 
 
 if __name__ == "__main__":
-    m=int(input("row "))
-    n=int(input("column "))
+    m=5
+    n=5
     matrix=np.zeros((m,n),dtype=np.int64)
     for i in range(0,m):
         for j in range(0,n):
