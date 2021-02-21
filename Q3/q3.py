@@ -21,7 +21,7 @@ cv2.destroyAllWindows()
 for x in range(6):
     temp = 0
     for y in range(5 * (x + 1)):
-        noise_img = random_noise(img,mode='gaussian',mean=random(),var= random())
+        noise_img = random_noise(img_gray,mode='gaussian',mean=random(),var= random())
         temp += noise_img
     cv2.imshow('Lena_Gray Gaussian' + str(x),temp/(5*(x + 1)))
     cv2.waitKey(1000)
@@ -30,7 +30,7 @@ for x in range(6):
 for x in range(6):
     temp = 0
     for y in range(5 * (x + 1)):
-        noise_img = random_noise(img,mode='s&p',amount = random())
+        noise_img = random_noise(img_gray,mode='s&p',amount = random())
         temp += noise_img
     cv2.imshow('Lena_Gray Salt and Pepper' + str(x),temp/(5*(x + 1)))
     cv2.waitKey(1000)
@@ -39,7 +39,7 @@ for x in range(6):
 for x in range(6):
     temp = 0
     for y in range(5 * (x + 1)):
-        noise_img = random_noise(img,mode='speckle',mean=0,var=random())
+        noise_img = random_noise(img_gray,mode='speckle',mean=0,var=random())
         temp += noise_img 
     cv2.imshow('Lena_Gray Speckle ' + str(x),temp/(5*(x + 1)))
     cv2.waitKey(1000)
